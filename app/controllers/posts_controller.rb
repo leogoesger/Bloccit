@@ -1,6 +1,8 @@
+require 'spam'
+
 class PostsController < ApplicationController
   def index
-  	@posts = Post.all
+  	@posts = Spam.censor(Post.all)
   end
 
   def show
