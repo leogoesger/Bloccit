@@ -5,8 +5,7 @@ RSpec.describe Topic, type: :model do
    let(:description) { RandomData.random_paragraph }
    let(:public) { true }
    let(:topic) { Topic.create!(name: name, description: description) }
-
- # #1
+   
    it { is_expected.to have_many(:posts) }
    
    describe "attributes" do
