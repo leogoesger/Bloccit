@@ -8,7 +8,6 @@ require 'random_data'
 	end
 	users = User.all
 
-
 	15.times do
 		Topic.create!(
 		 name:         RandomData.random_sentence,
@@ -25,39 +24,20 @@ require 'random_data'
 		 body:   RandomData.random_paragraph
 		)
 	end
+	posts = Post.all
 
-Post.find_or_create_by(
-	title: "Das New Title",
-	body: "Das New Body"
-)
-
-posts = Post.all
-
-100.times do
-	Comment.create!(
-	# #4
-		post: posts.sample,
-		body: RandomData.random_paragraph
-	)
-end
-
-myPost = 1
-posts.each do |p|
-	if p.title == "Das New Title"
-		myPost = p
+	100.times do
+		Comment.create!(
+			post: posts.sample,
+			body: RandomData.random_paragraph
+		)
 	end
-end
 
-Comment.find_or_create_by(
-	post: myPost,
-	body: "my post"
-)
-
-user = User.first
- user.update_attributes!(
-   email: 'leoq91@gmail.com', # replace this with your personal email
-   password: 'helloworld'
- )
+	user = User.first
+	user.update_attributes!(
+		email: 'leoq91@gmail.com', # replace this with your personal email
+		password: 'helloworld'
+	)
 
 puts "Seed finished"
 puts "#{User.count} users created"
