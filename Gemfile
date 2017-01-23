@@ -31,6 +31,7 @@ source 'https://rubygems.org'
  gem 'bootstrap-sass'
  gem 'shoulda'
  gem 'bcrypt'
- # gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw]
-
  
+ #windows
+ #gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw]
+ #gem 'bcrypt-ruby', '3.1.5', :require => 'bcrypt'
