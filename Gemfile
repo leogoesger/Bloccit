@@ -16,6 +16,7 @@ source 'https://rubygems.org'
 
  group :development, :test do
    gem 'rspec-rails', '~> 3.0'
+    gem 'factory_girl_rails', '~> 4.0'
  end
  
  # Use SCSS for stylesheets
@@ -32,6 +33,7 @@ source 'https://rubygems.org'
  gem 'shoulda'
  gem 'bcrypt'
  gem 'figaro', '1.0'
+
 
  #windows
  gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw]
