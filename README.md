@@ -13,7 +13,7 @@ Just like Reddit, Bloccit is an app where user can post, vote on, share and save
 ![screenshot](./avatar.png)
 
 ##User can create Topic and Post
-![screenshot](./new_topics.png)
+![screenshot](./new_topic.png)
 
 ##User can view a list of Topic and Posts
 ![screenshot](./topics.png)
